@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ReactiveTutorial",
+            "request": "launch",
+            "mainClass": "com.reactive_app.ReactiveTutorial",
+            "projectName": "reactive-app"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ReactiveAppApplication<reactive-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.reactive_app.ReactiveAppApplication",
+            "projectName": "reactive-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
