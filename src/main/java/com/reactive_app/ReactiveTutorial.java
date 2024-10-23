@@ -66,11 +66,8 @@ public class ReactiveTutorial {
 
     // the do functions
     private Flux<Integer> todoSomething1(){
-        Flux<Integer> flux= Flux.range(1, 10);
-        return flux.doOnEach(signal -> {
-            if(signal.getType() == SignalType.ON_COMPLETE){
-                System.out.println("I am done");
-            }
-        });
+        Flux<Integer> flux= Flux.range(20, 10);
+        return flux.doOnEach(signal -> System.out.print("Signal: "+ signal));
     }
+    
 }
